@@ -1,0 +1,32 @@
+
+
+<div class="container">
+
+    <form>
+
+  <!--***********Partie Image********
+***************************************-->
+    <div class="image-join-forms">
+      <img src=" " alt="">
+    </div>
+
+<!--***********Partie forms ********
+**************************************-->
+    <div class="forms-ajouter-client">
+
+            <h2>Creation Conseiller</h2>
+            <form #conseillerForm="ngForm" (ngSubmit)= "onSubmit(conseillerForm)">
+              <p>Nom</p>
+              <input ngModel name="nom" type="text" placeholder="Nom" id="Nom">
+              <p>Prenom</p>
+              <input ngModel name="prenom" type="text" placeholder="Prenom" id="Prenom">
+              <p>Email</p>
+              <input ngModel name="email" type="email" placeholder="Email" id="email">
+              <p>Adresse</p>
+              <input ngModel name="adresse" type="adresse" placeholder="Adresse" id="adresse">
+
+              <button  type="submit" > Ajouter</button>
+            </form>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,44 @@
+<!-- =============================================
+=============Page Liste Conseiller ==================
+==================================================-->
+<!--***********Liste Conseiller Titre***********
+********************************************* -->
+<h1>Liste Conseillers</h1>
+<!--***********Partie recherche du Tableau********
+***************************************************-->
+
+<!--***********Partie Ajouter Sur Tableau********
+***************************************************-->
+<input class="ajouter-button" type="submit" value="Ajouter Conseiller" [routerLink]="['/create_conseiller']">
+<!--***********Partie Presentation Tableau********
+***************************************************-->
+<table class="container-table">
+
+<!--Tableau-->
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id </th>
+        <th scope="col">nom</th>
+        <th scope="col">prenom</th>
+        <th scope="col">email</th>
+        <th scope="col">adresse</th>
+        <th scope="col">Opérations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of conseillers">
+        <th scope="row">{{u.id}}</th>
+        <td>{{u.nom}}</td>
+        <td>{{u.prenom}}</td>
+        <td>{{u.email}}</td>
+        <td>{{u.adresse}}</td>
+
+        <td>
+            <button class="btn btn-danger" (click)="deleteConseiller(u.id)">Delete</button>
+            <button class="btn btn-primary" [routerLink]="['/edit_conseiller', u.id]">Editer</button>
+          </td>
+      </tr>
+
+    </tbody>
+  </table>

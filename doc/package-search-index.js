@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"ma.jit"},{"l":"ma.jit.aop"},{"l":"ma.jit.entites"},{"l":"ma.jit.rest"},{"l":"ma.jit.security"},{"l":"ma.jit.service"},{"l":"ma.jit.spring.dao"}]

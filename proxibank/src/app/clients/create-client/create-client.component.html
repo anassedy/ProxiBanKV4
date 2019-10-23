@@ -1,0 +1,35 @@
+
+   <!-- ====================================
+=============Header De La Page ==========
+==========================================-->
+
+
+<!-- ==========================================================
+=============Partie Pour Ajouter Un Client  ==========
+===============================================================-->
+
+<div class="container">
+
+  <!--***********Partie Image********
+***************************************-->
+
+
+<!--***********Partie forms ********
+**************************************-->
+    <div class="forms-ajouter-client">
+
+            <h2>Creation Client</h2>
+            <form #clientForm="ngForm" (ngSubmit)= "onSubmit(clientForm)">
+              <p>Nom</p>
+              <input ngModel name="nom" type="text" placeholder="Nom" id="Nom">
+              <p>Prenom</p>
+              <input ngModel name="prenom" type="text" placeholder="Prenom" id="Prenom">
+              <p>Email</p>
+              <input ngModel name="email" type="email" placeholder="Email" id="email">
+              <p>Adresse</p>
+              <input ngModel name="adresse" type="adresse" placeholder="Adresse" id="adresse">
+              <input type="submit" value="Ajouter">
+            </form>
+    </div>
+
+</div>

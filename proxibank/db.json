@@ -1,0 +1,76 @@
+{
+  "conseillers": [
+    {
+      "id": 1,
+      "nom": "faty",
+      "prenom": "nouaim",
+      "email": "fati@gmail.com",
+      "adresse": "Casablanca"
+    },
+    {
+      "id": 2,
+      "nom": "anas",
+      "prenom": "edchoury",
+      "email": "anas@gmail.com",
+      "adresse": "rabat"
+    },
+    {
+      "id": 3,
+      "nom": "hamza",
+      "prenom": "omouh",
+      "email": "hamza@gmail.com",
+      "adresse": "Casablanca"
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "nom": "faty",
+      "prenom": "nouaim",
+      "email": "fati@gmail.com",
+      "adresse": "Casablanca"
+    },
+    {
+      "id": 2,
+      "nom": "anas",
+      "prenom": "edchoury",
+      "email": "anas@gmail.com",
+      "adresse": "rabat"
+    },
+    {
+      "id": 3,
+      "nom": "issam",
+      "prenom": "omouh",
+      "email": "hamza@gmail.com",
+      "adresse": "Casablanca"
+    }
+  ],
+    "comptesCourant": [
+      {
+        "numCompte": 4563689868 ,
+        "solde":45600,
+        "dateCreation": "04/05/2007",
+        "decouverte": 2000
+      },
+      {
+        "numCompte": 57987868798 ,
+        "solde":6789000,
+        "dateCreation": "15/11/2010",
+        "decouverte": 2000
+      }
+    ],
+    "comptesEpargne": [
+      {
+        "numCompte": 452313439998 ,
+        "solde":47598,
+        "dateCreation": "12/12/2012",
+        "taux": 3
+      },
+      {
+        "numCompte": 653648587098 ,
+        "solde":8769900,
+        "dateCreation": "07/04/2015",
+        "decouverte": 3
+      }
+  ]
+}

@@ -1,0 +1,198 @@
+/*==============================================
+=============== Page Liste Clients CSS ==============
+================================================== */
+
+
+/* ==============================================
+=============== Liste Client Titre CSS ==============
+================================================== */
+h1{
+  text-align: center;
+  position: relative;
+  top: 100px;
+  right: 80px;
+}
+
+
+
+/* =================================================
+=============== Partie recherche du Tableau CSS ====
+==================================================== */
+
+/********** container searche CSS **********
+**********************************/
+.searche{
+  position: relative;
+  float: right;
+  right: 70px;
+  top: 90px;
+}
+
+
+/**********  les input text et submit  CSS **********
+*****************************************************/
+
+.searche input{
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+.searche input[type="text"]{
+  background: #17223B;;
+  width: 340px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  border-radius: 25px 0 0 25px;
+  color: white;
+}
+.searche input[type="submit"]{
+  position: relative;
+  border-radius: 0 25px  25px 0;
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #263859;
+  color: palegoldenrod;
+}
+
+.searche input[type="submit"]:hover{
+  background: #76A21E;
+}
+
+
+
+
+
+
+/* =================================================
+=============== Partie Ajouter surTableau CSS ====
+==================================================== */
+
+/**********  button Ajouter CSS **********
+******************************************/
+.ajouter-button{
+  position: relative;
+  top: 100px;
+  left: 80px;
+  width: 150px;
+  padding: 3px;
+  background: none;
+  color: #ccc;
+  width: 200px;
+  height: 40px;
+  border: 1px solid black;
+  font-size: 20px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+  background-color: #17223B;
+}
+
+.ajouter-button:hover{
+  background:#76A21E;
+}
+
+
+
+
+
+
+/* ===========================================
+=============== Partie Tableau CSS ===========
+============================================== */
+
+/**********  Container Tableau CSS *******
+******************************************/
+.container-table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 1200px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  top: 100px;
+}
+
+
+/**********  Head Tableau CSS *******
+**************************************/
+.container-table thead tr{
+  background-color: #17223B;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+
+.container-table th {
+  padding: 12px 15px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/**********  body Tableau CSS *******
+******************************************/
+.container-table td {
+  padding: 12px 15px;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-table tbody tr{
+  border-bottom: 1px solid black;
+  background-color: #263859;
+}
+
+.container-table tbody tr:nth-of-type(even){
+  background-color: #6B778D;
+}
+
+.container-table tbody tr:last-of-type{
+  border-bottom: 2px solid black;
+}
+
+.container-table tbody tr.active-row{
+  font-weight: bold;
+  color: #009879;
+}
+
+
+
+.container-table tbody tr td input{
+  margin:10px;
+  background: none;
+  color: #ccc;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+.container-table tbody tr td .Supprimer:hover{
+  background-color:  #F0134D;
+}
+.container-table tbody tr td .Editer:hover{
+  background-color: #3E64FF;
+}
+
+.container-table tbody tr td a {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 12px 15px;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}

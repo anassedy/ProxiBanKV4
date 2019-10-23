@@ -1,0 +1,22 @@
+<br><br>
+<div class="text-center">
+<div class="container">
+
+  <!--***********Partie forms ********
+  **************************************-->
+
+    <h2>Affecter Un nouveau Conseiller</h2>
+  <br><br>
+    <table class="table">
+      <tr>
+        <th>Conseiller</th>
+        <th>Affecter</th>
+      </tr>
+      <tr *ngFor="let cc of conseillers">
+        <td>{{cc.nom}}</td>
+        <td><a class="btn btn-success" (click)="affecter(cc.id)">Affecter</a></td>
+      </tr>
+    </table>
+
+  </div>
+</div>

@@ -1,0 +1,100 @@
+/* ==============================================
+======= Partie Ajouter Client Css ==========
+=================================================*/
+
+.container{
+    display: flex; 
+    justify-content: space-between;
+    background: -webkit-linear-gradient(right ,rgb(182, 191, 211),rgb(44, 62, 102),rgb(18, 27, 48),#17223B);
+    background-size: cover;
+    margin-right: -8px;
+    margin-left: -8px;
+    height:1000px;
+}
+
+/**********  image CSS **********
+***************************************/
+.image-join-forms img{
+    position: relative;
+    left: 276px;
+    top: 102px;
+    height: 873px;
+    width: 400px;
+    border-radius: 100px 0 0 100px ; 
+    
+}
+
+
+/**********  forms ajouter client CSS **********
+*************************************************/
+.forms-ajouter-client{
+  position: absolute;
+  right: 300px;
+  top: 190px;
+  background: rgb(252, 252, 250);
+  padding: 40px 100px 100px 100px;
+  border-radius: 0 100px 100px 0 ; 
+
+    
+}
+
+/********** Heder text Cree Client  CSS **********
+**************************************************/
+.forms-ajouter-client h2{
+    
+    padding: 0 0 30px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    border-bottom: 3px solid #17223B;
+}
+
+/**********  les titres des inputes CSS **********
+*********************************************************/
+.forms-ajouter-client form P {
+    margin: 0;
+    padding: 20px 0px 10px 0px;
+    font-weight: bold;
+    color:black;
+    
+}
+
+/**********  inputes CSS **********
+************************************/
+.forms-ajouter-client form input{
+    border: none;
+    border-bottom: 1px solid #17223B;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: black;
+    font-size: 15PX;
+}
+
+.forms-ajouter-client form input[type=submit]{
+    height: 30px;
+    color: #fff;
+    font-size: 15px;
+    background: #76A21E;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 5%;
+    width: 100px;
+    position: relative;
+    top: 40px;
+    
+
+}
+
+/**********  liste des compte CSS **********
+********************************************/
+.forms-ajouter-client form .type-Compte{
+    width: 200px;
+    padding: 5px;
+    border-color: #17223B;
+    border-radius: 5px;
+    outline: none;
+}

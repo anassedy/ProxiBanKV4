@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="container">
+<div class="card ml-auto mr-auto mt-2 params-container">
+  <div class="card-header">
+    <h4>Paramètrage</h4>
+  </div>
+  <div class="card-body" *ngIf="parametrage">
+
+    <form #parametreForm="ngForm" (ngSubmit)="modiferParametre(parametreForm)">
+      <div class="form-group">
+        <label>Commission du virement </label>
+        <input type="number" class="form-control" name="comission" [(ngModel)]="parametrage.commission">
+      </div>
+      <div class="form-group">
+        <label>nombre maximum de clients par conseiller</label>
+        <input type="number" class="form-control" name="maxclients" [(ngModel)]="parametrage.nombreMaxClient">
+      </div>
+      <div class="form-group">
+        <label>nombre maximum des conseillers </label>
+        <input type="text" class="form-control" name="maxconseillers" [(ngModel)]="parametrage.nombreMaxConseiller">
+      </div>
+      <div class="form-group">
+        <select class="custom-select" name="typegraphe" [ngModel]="parametrage.graphe? 'HISTOGRAMME' : 'CAMAMBERT'">
+          <option selected>HISTOGRAMME</option>
+          <option>CAMAMBERT</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="form-control btn btn-success mb-2">Valider</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+</div>

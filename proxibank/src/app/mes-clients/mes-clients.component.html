@@ -1,0 +1,46 @@
+<!-- =============================================
+=============Page Liste Clients ==================
+==================================================-->
+<!--***********Liste Client Titre***********
+********************************************* -->
+<h1>Liste Clients</h1>
+<!--***********Partie recherche du Tableau********
+***************************************************-->
+
+<!--***********Partie Ajouter Sur Tableau********
+***************************************************-->
+<input class="ajouter-button" type="submit" value="Ajouter Client" [routerLink]="['/create_client']">
+<br>
+<!--***********Partie Presentation Tableau********
+***************************************************-->
+<table class="container-table">
+  <!-- head du tableau -->
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>nom</th>
+    <th>prenom</th>
+    <th>email</th>
+    <th>adresse</th>
+    <th>Opérations</th>
+    <th></th>
+  </tr>
+  </thead>
+  <!-- body du tableau -->
+  <tbody>
+  <tr *ngFor="let u of clients">
+    <th scope="row">{{u.id}}</th>
+    <td>{{u.nom}}</td>
+    <td>{{u.prenom}}</td>
+    <td>{{u.email}}</td>
+    <td>{{u.adresse}}</td>
+    <td>
+      <button class="btn btn-warning" [routerLink]="['/list_comptes' , u.id]">Liste des comptes</button>
+    </td>
+    <td>
+      <button class="btn btn-danger" (click)="deleteClient(u.id)">Supprimer</button>
+      <button class="btn btn-primary" [routerLink]="['/edit_client' , u.id]">Editer</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

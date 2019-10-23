@@ -1,0 +1,53 @@
+li , a{
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    text-decoration: none;
+  margin: auto;
+  margin-top: 20px;
+ }
+h1 {
+  color: white;
+}
+ header{
+    margin-top: -10px;
+    margin-right: -8px;
+    margin-left: -8px;
+    display: flex;
+    justify-content: space-between;
+   max-height: 30px;
+    align-items: center;
+    padding: 50px 50px;
+     background-color: #17223B;
+ }
+ .Logo{
+    cursor: pointer;
+    color: #263859;
+ }
+ .nav-links{
+    list-style: none;
+ }
+ .nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+ }
+ .nav-links li a{
+    transition: all 0.3s ease 0s;
+    color: floralwhite;
+ }
+ .nav-links li a:hover{
+    color: #263859;
+ }
+ .nav-links li a button{
+    padding: 9px 25px;
+    background-color: #1d16a2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:all 0.3s ease 0s ;
+    color: cornsilk;
+    outline: none;
+ }
+ .nav-links li a button:hover{
+ background-color:    #263859 ;
+ }

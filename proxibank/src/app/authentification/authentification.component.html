@@ -1,0 +1,18 @@
+<!-- ==========================================================
+=============Balise qui Contirnt Image de Background ==========
+===============================================================-->
+
+<div class="container"></div>
+<!-- ================================================
+==================Formulaire d'inscription ==========
+======================================================-->
+<div class="forms">
+ <h2>Login</h2>
+ <form action="" #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+   <p>Email</p>
+   <input type="text" placeholder="Email" ngModel name="username">
+   <p>Password</p>
+   <input type="password" placeholder="Password" ngModel name="password">
+   <input type="submit" value="Sign in">
+ </form>
+</div>

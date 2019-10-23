@@ -1,0 +1,43 @@
+<!-- ====================================
+=============Header De La Page ==========
+==========================================-->
+
+
+
+<!-- ==========================================================
+=============Partie Pour Ajouter Un Client  ==========
+===============================================================-->
+
+<div class="container">
+
+
+<!--***********Partie Image********
+***************************************-->
+<div class="image-join-forms">
+        <img src="/src/assets/images/beach-buildings-business-3052400.jpg" alt="">
+      </div>
+
+<!--***********Partie forms ********
+**************************************-->
+    <div class="forms-ajouter-client">
+            <h2>Edition Conseiller</h2>
+            <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+              <div class="nom-email">
+              <p>Nom</p>
+              <input type="text" formControlName="nom" placeholder="Nom" id="Nom">
+              <p>Email</p>
+              <input type="email" formControlName="email" placeholder="email" id="email">
+              </div>
+              <div>
+              <p>Prenom</p>
+              <input type="text" formControlName="prenom" placeholder="Prenom" id="prenom">
+              <p>Adresse</p>
+              <input type="adresse" formControlName="adresse" placeholder="Adresse" id="adresse">
+              </div>
+
+
+              <input type="submit" value="Editer">
+            </form>
+    </div>
+
+</div>

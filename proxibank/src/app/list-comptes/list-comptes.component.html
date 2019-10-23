@@ -1,0 +1,44 @@
+<div class="container">
+<h1>Liste Comptes</h1>
+</div>
+<!--***********Partie recherche du Tableau********
+***************************************************-->
+
+<!--***********Partie Ajouter Sur Tableau********
+***************************************************-->
+
+<!--***********Partie Presentation Tableau********
+***************************************************-->
+<div class="container">
+<table class="table">
+   <!-- head du tableau -->
+   <thead>
+       <tr>
+         
+           <th>Numero_compte</th>
+           <th>Solde</th>
+           <th>client</th>
+           <th></th>
+           <th>Effectuer</th>
+
+       </tr>
+   </thead>
+   <!-- body du tableau -->
+   <tbody>
+    <tr *ngFor="let u of listeComptes">
+        
+        <td>{{u.numCompte}}</td>
+        <td>{{u.solde}}</td>
+        <td>{{client.nom}}</td>
+        <td>
+<!--
+            <button class="btn btn-warning" [routerLink]="['list_comptes', u.id]">Liste des comptes</button>
+-->  
+        </td>
+        <td>
+            <button class="btn btn-primary" routerLink="/virement">Effectuer virement</button>
+          </td>
+      </tr>
+   </tbody>
+</table>
+</div>

@@ -1,0 +1,12 @@
+<header>
+    <div class="Logo">
+        <h1>PROXIBANQUE</h1>
+    </div>
+   <nav>
+       <ul class="nav-links">
+          <li><a [routerLink]="['/list_client']">Home</a></li>
+          <li><a *ngIf="isAuth" (click)="logout()"><button>Logout</button></a></li>
+         <li><a *ngIf="!isAuth" routerLink="/login"><button>Login</button></a></li>
+       </ul>
+   </nav>
+ </header>
